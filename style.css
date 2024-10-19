@@ -1,0 +1,188 @@
+*{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+h1, h2, h3{
+    font-family: "Electrolize", sans-serif;
+    font-weight: 400;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+
+}
+
+nav ul{
+    margin: 0px;
+    display: flex;
+    justify-content: right;
+    height: 70px;
+    align-items: center;
+}
+
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav li{
+    list-style-type: none;
+    margin: 0px 20px;
+}
+
+.intestazione{
+    min-height: 100vh;
+    background-image: url('http://picsum.photos/1000');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 7px;
+    color: white;
+  
+}
+.products{
+    font-size: 35px;
+    text-decoration: underline dashed;
+}
+
+img{
+    width: 200px;
+}
+
+footer{
+    height: 25vh;
+    background-color: black;
+    color: white;
+}
+
+
+.btn-custom{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    border: 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+   
+}
+
+
+
+.btn-custom:hover{
+    background-color:rgb(209, 209, 143);
+    color: black;
+  
+}
+
+article{
+    width: 30%;
+    height: 70vh; 
+    padding: 20px;
+    border: 2px solid black;
+    
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 70vh;
+    align-items: start;
+    margin-bottom: 100px;
+}
+
+.article-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.box{
+    height: 300px;
+    width: 300px;
+    background: black;
+    position: relative;
+    left: 2px;
+    top: 0px;
+
+}
+
+.min-box{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+
+}
+
+
+
+
+/* media Querries */
+/* keyword */
+
+@media screen and (max-width: 900px){
+    .intestazione{
+        min-height: 70vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .intestazione{
+        min-height: 40vh;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    article{
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+       
+
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+    img{
+        width: 50%;
+    }
+
+    nav li{
+
+        margin: 0px 10px;
+    }
+
+}
+
